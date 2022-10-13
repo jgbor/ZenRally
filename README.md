@@ -1,2 +1,2 @@
-# temalab
+# Témalabor
 Témalabor autós játék
