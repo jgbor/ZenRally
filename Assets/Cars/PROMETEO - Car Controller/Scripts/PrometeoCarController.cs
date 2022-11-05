@@ -22,7 +22,7 @@ public class PrometeoCarController : MonoBehaviour
       [Space(20)]
       //[Header("CAR SETUP")]
       [Space(10)]
-      [Range(20, 190)]
+      [Range(20, 250)]
       public int maxSpeed = 90; //The maximum speed that the car can reach in km/h.
       [Range(10, 120)]
       public int maxReverseSpeed = 45; //The maximum speed that the car can reach while going on reverse in km/h.
@@ -520,9 +520,9 @@ public class PrometeoCarController : MonoBehaviour
         if(Mathf.RoundToInt(carSpeed) < maxSpeed){
           //Apply positive torque in all wheels to go forward if maxSpeed has not been reached.
           frontLeftCollider.brakeTorque = 0;
-          frontLeftCollider.motorTorque = (accelerationMultiplier * 50f) * throttleAxis;
+          frontLeftCollider.motorTorque = 0;//(accelerationMultiplier * 50f) * throttleAxis;
           frontRightCollider.brakeTorque = 0;
-          frontRightCollider.motorTorque = (accelerationMultiplier * 50f) * throttleAxis;
+          frontRightCollider.motorTorque = 0;//(accelerationMultiplier * 50f) * throttleAxis;
           rearLeftCollider.brakeTorque = 0;
           rearLeftCollider.motorTorque = (accelerationMultiplier * 50f) * throttleAxis;
           rearRightCollider.brakeTorque = 0;

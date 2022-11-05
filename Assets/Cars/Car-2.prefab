@@ -9957,7 +9957,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68060393111767056}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.86602545, z: 0, w: 0.49999994}
   m_LocalPosition: {x: 88.775955, y: 2.0980215, z: -30.72595}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9968,7 +9968,7 @@ Transform:
   - {fileID: 2110575015191958283}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 120, z: 0}
 --- !u!1 &68060393226687753
 GameObject:
   m_ObjectHideFlags: 0
@@ -10028,7 +10028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4044717213e31446939f7bd49c896ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0, y: 11, z: 0}
+  m_TrackedObjectOffset: {x: 0, y: 7.5, z: 0}
   m_LookaheadTime: 0.1
   m_LookaheadSmoothing: 30
   m_LookaheadIgnoreY: 0
@@ -10056,7 +10056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: -0.0071519995, y: 13.95, z: -4.5474496}
+  m_FollowOffset: {x: -0.0071519995, y: 10, z: -4.5474496}
   m_XDamping: 0
   m_YDamping: 0
   m_ZDamping: 1
@@ -10234,8 +10234,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68060393566037334}
-  m_LocalRotation: {x: 0.41854012, y: -0.27973127, z: 0.13724302, w: 0.85307616}
-  m_LocalPosition: {x: 25.78749, y: 36.916687, z: -8.782396}
+  m_LocalRotation: {x: 0.38721174, y: -0.28454202, z: 0.12697053, w: 0.8677451}
+  m_LocalPosition: {x: 25.787497, y: 32.966686, z: -8.782393}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10427,7 +10427,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 771ce407ce807b74885ec23ebd1e6647, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 0.75
   Loop: 1
   Mute: 0
@@ -10764,8 +10764,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7386925323124961607}
-  m_LocalRotation: {x: 0.41854012, y: -0.27973127, z: 0.13724302, w: 0.85307616}
-  m_LocalPosition: {x: 25.78749, y: 36.916687, z: -8.782396}
+  m_LocalRotation: {x: 0.38721174, y: -0.28454202, z: 0.12697053, w: 0.8677451}
+  m_LocalPosition: {x: 25.787497, y: 32.966686, z: -8.782393}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10970,13 +10970,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 180
   maxReverseSpeed: 55
-  accelerationMultiplier: 7
-  maxSteeringAngle: 31
-  steeringSpeed: 0.5
-  brakeForce: 485
-  decelerationMultiplier: 2
-  handbrakeDriftMultiplier: 5
-  bodyMassCenter: {x: 0, y: 0, z: 0}
+  accelerationMultiplier: 9
+  maxSteeringAngle: 33
+  steeringSpeed: 0.3
+  brakeForce: 575
+  decelerationMultiplier: 1
+  handbrakeDriftMultiplier: 1
+  bodyMassCenter: {x: 0, y: 0.2, z: 0}
   frontLeftMesh: {fileID: 6767733516718099130}
   frontLeftCollider: {fileID: 2684991656644820956}
   frontRightMesh: {fileID: 797841049787012989}
