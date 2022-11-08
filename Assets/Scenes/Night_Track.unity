@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1034484023}
-  m_IndirectSpecularColor: {r: 0.0022511913, g: 0.0035538874, b: 0.00858123, a: 1}
+  m_IndirectSpecularColor: {r: 0.0022505252, g: 0.0035593496, b: 0.008792071, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -25504,15 +25504,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4325504469724246533, guid: bb5d43dc0cc914343977b3cb90fd57e4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.25470078
+      value: -0.25470075
       objectReference: {fileID: 0}
     - target: {fileID: 4325504469724246533, guid: bb5d43dc0cc914343977b3cb90fd57e4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.11365451
+      value: 0.1136545
       objectReference: {fileID: 0}
     - target: {fileID: 4325504469956603420, guid: bb5d43dc0cc914343977b3cb90fd57e4, type: 3}
       propertyPath: m_Name
       value: Car-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4325504469956603420, guid: bb5d43dc0cc914343977b3cb90fd57e4, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4325504469956603423, guid: bb5d43dc0cc914343977b3cb90fd57e4, type: 3}
       propertyPath: m_RootOrder
@@ -25576,11 +25580,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4325504470456490330, guid: bb5d43dc0cc914343977b3cb90fd57e4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.25470078
+      value: -0.25470075
       objectReference: {fileID: 0}
     - target: {fileID: 4325504470456490330, guid: bb5d43dc0cc914343977b3cb90fd57e4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.11365451
+      value: 0.1136545
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb5d43dc0cc914343977b3cb90fd57e4, type: 3}
