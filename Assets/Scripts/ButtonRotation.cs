@@ -23,11 +23,11 @@ public class ButtonRotation : MonoBehaviour
             parent.Rotate(rotatewith * speed * Time.deltaTime);
     }
 
-    public void chnageWhenHover(){
+    public void changeWhenHover(){
         activeRotatation = true;
     }
 
-    public void chnageWhenLeaves(){
+    public void changeWhenLeaves(){
         activeRotatation = false;
     }
 }
