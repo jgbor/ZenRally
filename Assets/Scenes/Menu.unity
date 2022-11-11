@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1492,6 +1492,7 @@ GameObject:
   - component: {fileID: 522981910}
   - component: {fileID: 522981909}
   - component: {fileID: 522981908}
+  - component: {fileID: 522981911}
   m_Layer: 5
   m_Name: ExitButton
   m_TagString: Untagged
@@ -1563,7 +1564,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1568183115}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 522981911}
+        m_TargetAssemblyTypeName: ExitScript, Assembly-CSharp
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &522981909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1602,6 +1615,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522981906}
   m_CullTransparentMesh: 1
+--- !u!114 &522981911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522981906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4c4923913fbc1b45bc72f0ea17cfac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &877010824
 GameObject:
   m_ObjectHideFlags: 0
