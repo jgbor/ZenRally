@@ -20,7 +20,7 @@ public class ButtonRotation : MonoBehaviour
     void Update()
     {
         if(activeRotatation)
-            parent.Rotate(rotatewith * speed * Time.deltaTime);
+            parent.Rotate(rotatewith * speed * Time.deltaTime/2);
     }
 
     public void changeWhenHover(){
