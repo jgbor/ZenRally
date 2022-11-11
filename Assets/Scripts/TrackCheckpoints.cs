@@ -40,6 +40,10 @@ public class TrackCheckpoints : MonoBehaviour
                 {
                     Debug.Log($"Lap {currentLap} finished");
                     currentLap++;
+                    if(currentLap > lapToComplete)
+                    {
+                        //VÉGE
+                    }
                 }
             }
             else
