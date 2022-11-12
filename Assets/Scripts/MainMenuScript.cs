@@ -1,18 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class MapSelect : MonoBehaviour
+public class MainMenuScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public static int CarNumber = 0;
+
+    public void StartMap1()
     {
-        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void StartMap2()
     {
-        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
+
+    public void StartMap3()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+    }
+
+    public void setCarNumber(int i)
+    {
+        CarNumber = i;
+    }
+
 }
