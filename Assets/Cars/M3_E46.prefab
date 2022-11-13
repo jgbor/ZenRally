@@ -5642,7 +5642,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4595727385659432353}
   - component: {fileID: 145497553057250033}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FollowCam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5656,7 +5656,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1827101914548198067}
-  m_LocalRotation: {x: 0.39369547, y: -0.23566152, z: 0.10515867, w: 0.88227504}
+  m_LocalRotation: {x: 0.39369547, y: -0.23566146, z: 0.10515865, w: 0.88227504}
   m_LocalPosition: {x: 30.944855, y: 33.08853, z: -14.760972}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11826,7 +11826,7 @@ GameObject:
   - component: {fileID: 7701781673139437951}
   - component: {fileID: 3444671529330433421}
   - component: {fileID: 2517582700691956216}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Gear Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12491,7 +12491,7 @@ GameObject:
   - component: {fileID: 4930608433172677691}
   - component: {fileID: 3765936010047424300}
   - component: {fileID: 119992274279201796}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12505,7 +12505,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6111304053288004594}
-  m_LocalRotation: {x: 0.39369547, y: -0.23566152, z: 0.10515867, w: 0.88227504}
+  m_LocalRotation: {x: 0.39369547, y: -0.23566146, z: 0.10515865, w: 0.88227504}
   m_LocalPosition: {x: 30.944855, y: 33.08853, z: -14.760972}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -12607,7 +12607,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2034873932989722258}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12643,7 +12643,7 @@ GameObject:
   - component: {fileID: 175133908730188112}
   - component: {fileID: 646733197322782988}
   - component: {fileID: 7595248065016579634}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12828,7 +12828,7 @@ GameObject:
   - component: {fileID: 4962700267124396415}
   - component: {fileID: 2696159764379887299}
   - component: {fileID: 7574801880467069464}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Units Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12908,7 +12908,7 @@ GameObject:
   - component: {fileID: 4391618546388314571}
   - component: {fileID: 3953467832962330020}
   - component: {fileID: 1997028631798451257}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Speed Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12991,7 +12991,7 @@ GameObject:
   - component: {fileID: 1603633857706148874}
   - component: {fileID: 8495457319118970087}
   - component: {fileID: 2471053369643080869}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14057,7 +14057,7 @@ GameObject:
   - component: {fileID: 4601988395753747727}
   - component: {fileID: 16119215899489847}
   - component: {fileID: 4202291782426965780}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: RPM Warner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24637,7 +24637,7 @@ MonoBehaviour:
   fuelInput: 0
   cutGas: 0
   permanentGas: 0
-  lowBeamHeadLightsOn: 0
+  lowBeamHeadLightsOn: 1
   highBeamHeadLightsOn: 0
   indicatorsOn: 0
   indicatorTimer: 0
@@ -25303,7 +25303,7 @@ GameObject:
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8799075692955132608
 Transform:
   m_ObjectHideFlags: 0
@@ -25444,7 +25444,7 @@ GameObject:
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8799075693158689782
 Transform:
   m_ObjectHideFlags: 0
@@ -25838,7 +25838,7 @@ GameObject:
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8799075693869114270
 Transform:
   m_ObjectHideFlags: 0
@@ -26014,7 +26014,7 @@ GameObject:
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8799075694078338136
 Transform:
   m_ObjectHideFlags: 0
