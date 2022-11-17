@@ -68,6 +68,9 @@ public class RCC_InputManager {
     public delegate void onTrailerDetach();
     public static event onTrailerDetach OnTrailerDetach;
 
+    public delegate void onRespawn();
+    public static event onRespawn OnRespawn;
+
     public static RCC_Inputs GetInputs() {
 
         if (inputActions == null) {
@@ -93,6 +96,7 @@ public class RCC_InputManager {
             inputActions.Camera.LookBack.performed += LookBack_performed;
             inputActions.Camera.LookBack.canceled += LookBack_canceled;
             inputActions.Vehicle.TrailerDetach.performed += TrailerDetach_performed;
+            inputActions.Vehicle.Respawn.performed += Respawn_performed;
 
 #if RCC_LOGITECH
             //	LOGITECH STEERING WHEEL INPUTS
@@ -140,6 +144,14 @@ public class RCC_InputManager {
 
         return inputs;
 
+    }
+
+    private static void Respawn_performed(InputAction.CallbackContext obj)
+    {
+        if (OnRespawn != null)
+        {
+            OnRespawn();
+        }
     }
 
 #if RCC_LOGITECH
