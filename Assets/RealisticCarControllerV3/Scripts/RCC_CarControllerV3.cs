@@ -496,6 +496,8 @@ public class RCC_CarControllerV3 : RCC_Core {
         RCC_InputManager.OnGearShiftDown += RCC_InputManager_OnGearShiftDown;
         RCC_InputManager.OnNGear += RCC_InputManager_OnNGear;
         RCC_InputManager.OnTrailerDetach += RCC_InputManager_OnTrailerDetach;
+        RCC_InputManager.OnRespawn += RCC_InputManager_OnRespawn;
+
 
     }
 
@@ -982,6 +984,13 @@ public class RCC_CarControllerV3 : RCC_Core {
 
         }
 
+    }
+
+    private void ResetToCheckPoint()
+    {
+        transform.position = GameObject.FindGameObjectWithTag("Track").GetComponent<TrackCheckpoints>().lastCheckpointPos.position;
+        transform.rotation = GameObject.FindGameObjectWithTag("Track").GetComponent<TrackCheckpoints>().lastCheckpointPos.rotation;
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
     }
 
     private void SteeringAssistance() {
@@ -2272,6 +2281,13 @@ public class RCC_CarControllerV3 : RCC_Core {
 
     }
 
+    private void RCC_InputManager_OnRespawn()
+    {
+        if (!canControl) return;
+
+        ResetToCheckPoint();
+    }
+
     void OnDisable() {
 
         RCC_SceneManager.OnBehaviorChanged -= CheckBehavior;
@@ -2287,6 +2303,7 @@ public class RCC_CarControllerV3 : RCC_Core {
         RCC_InputManager.OnGearShiftDown -= RCC_InputManager_OnGearShiftDown;
         RCC_InputManager.OnNGear -= RCC_InputManager_OnNGear;
         RCC_InputManager.OnTrailerDetach -= RCC_InputManager_OnTrailerDetach;
+        RCC_InputManager.OnRespawn -= RCC_InputManager_OnRespawn;
 
     }
 
