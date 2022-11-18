@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 604909983}
-  m_IndirectSpecularColor: {r: 0.15316007, g: 0.1738557, b: 0.18369617, a: 1}
+  m_IndirectSpecularColor: {r: 0.15316068, g: 0.17385614, b: 0.18369684, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -786,6 +786,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9080387811311782358, guid: eb43285fa3255b24486253d016202a5a, type: 3}
   m_PrefabInstance: {fileID: 109285762}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &109285764 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8453208354640548716, guid: eb43285fa3255b24486253d016202a5a, type: 3}
+  m_PrefabInstance: {fileID: 109285762}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &122902306
 GameObject:
   m_ObjectHideFlags: 0
@@ -1474,10 +1479,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28e227aba5139bd45870c7eeccf96aa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car1: {fileID: 0}
-  car2: {fileID: 0}
-  car3: {fileID: 0}
-  car4: {fileID: 0}
+  car1: {fileID: 853099714}
+  car2: {fileID: 1356228575}
+  car3: {fileID: 109285764}
+  car4: {fileID: 1695343749}
   transform: {fileID: 256708318}
 --- !u!4 &256708318
 Transform:
@@ -9759,6 +9764,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3316038312256357998, guid: 9be270f4c51d15d4d828a15d600902db, type: 3}
   m_PrefabInstance: {fileID: 853099712}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &853099714 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1756323171301504125, guid: 9be270f4c51d15d4d828a15d600902db, type: 3}
+  m_PrefabInstance: {fileID: 853099712}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &868029894 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 9c29525e79bd5f942b5e6f8a54a3e695, type: 3}
@@ -11404,6 +11414,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3146932963943228027, guid: 50fdcf7cf28687248ad956f6be9c946a, type: 3}
   m_PrefabInstance: {fileID: 1356228573}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1356228575 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2371134720290191553, guid: 50fdcf7cf28687248ad956f6be9c946a, type: 3}
+  m_PrefabInstance: {fileID: 1356228573}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1381249232 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: bd759135218df874a91b2cd22f25976a, type: 3}
@@ -12949,6 +12964,11 @@ PrefabInstance:
 --- !u!4 &1695343748 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8011081035060706396, guid: 1b52291636632af42a5e6e970c35e0d4, type: 3}
+  m_PrefabInstance: {fileID: 1695343747}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1695343749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7234684725864507110, guid: 1b52291636632af42a5e6e970c35e0d4, type: 3}
   m_PrefabInstance: {fileID: 1695343747}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1701738484 stripped
