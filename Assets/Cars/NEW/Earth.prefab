@@ -37967,7 +37967,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975344373382520914}
-  m_LocalRotation: {x: 0.39369524, y: -0.23566146, z: 0.10515857, w: 0.8822752}
+  m_LocalRotation: {x: 0.39369527, y: -0.23566149, z: 0.10515859, w: 0.88227516}
   m_LocalPosition: {x: 30.944859, y: 33.08853, z: -14.760977}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -38292,7 +38292,7 @@ MonoBehaviour:
   minEngineSoundPitch: 0.75
   maxEngineSoundPitch: 1.75
   minEngineSoundVolume: 0.05
-  maxEngineSoundVolume: 0.65
+  maxEngineSoundVolume: 0.55
   idleEngineSoundVolume: 0.55
   engineSoundPosition: {x: 0, y: 0, z: 1.5}
   gearSoundPosition: {x: 0, y: -0.5, z: 0.5}
@@ -39256,7 +39256,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5607951391632382524}
-  m_LocalRotation: {x: 0.39369524, y: -0.23566146, z: 0.10515857, w: 0.8822752}
+  m_LocalRotation: {x: 0.39369527, y: -0.23566149, z: 0.10515859, w: 0.88227516}
   m_LocalPosition: {x: 30.944859, y: 33.08853, z: -14.760977}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
