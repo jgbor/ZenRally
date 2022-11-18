@@ -379,6 +379,7 @@ public class PrometeoCarController : MonoBehaviour
         transform.position = GameObject.FindGameObjectWithTag("Track").GetComponent<TrackCheckpoints>().lastCheckpointPos.position;
         transform.rotation = GameObject.FindGameObjectWithTag("Track").GetComponent<TrackCheckpoints>().lastCheckpointPos.rotation;
         GetComponent<Rigidbody>().velocity = Vector3.zero;
+        GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
     }
 
     // This method converts the car speed data from float to string, and then set the text of the UI carSpeedText with this value.
