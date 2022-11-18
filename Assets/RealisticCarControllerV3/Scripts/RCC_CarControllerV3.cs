@@ -991,6 +991,7 @@ public class RCC_CarControllerV3 : RCC_Core {
         transform.position = GameObject.FindGameObjectWithTag("Track").GetComponent<TrackCheckpoints>().lastCheckpointPos.position;
         transform.rotation = GameObject.FindGameObjectWithTag("Track").GetComponent<TrackCheckpoints>().lastCheckpointPos.rotation;
         GetComponent<Rigidbody>().velocity = Vector3.zero;
+        GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
     }
 
     private void SteeringAssistance() {
