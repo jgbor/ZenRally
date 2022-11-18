@@ -19235,8 +19235,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581522754184856688}
-  m_LocalRotation: {x: 0.39369547, y: -0.2356615, z: 0.105158664, w: 0.88227504}
-  m_LocalPosition: {x: 30.944855, y: 33.08853, z: -14.760972}
+  m_LocalRotation: {x: 0.39369553, y: -0.2356612, z: 0.10515853, w: 0.8822751}
+  m_LocalPosition: {x: 30.944855, y: 33.08853, z: -14.760974}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19511,7 +19511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canControl: 1
-  isGrounded: 0
+  isGrounded: 1
   overrideBehavior: 0
   FrontLeftWheelTransform: {fileID: 373514961667281164}
   FrontRightWheelTransform: {fileID: 4372420193582593852}
@@ -19526,7 +19526,7 @@ MonoBehaviour:
   hasExtraWheels: 0
   overrideWheels: 0
   overrideAllWheels: 0
-  poweredWheels: 0
+  poweredWheels: 4
   configureVehicleSubsteps:
     speedThreshold: 10
     stepsBelowThreshold: 5
@@ -19550,8 +19550,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 120
-      value: 7
+      time: 163.33333
+      value: 6.586792
       inSlope: -0.1
       outSlope: -0.1
       tangentMode: 0
@@ -19570,7 +19570,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  steerAngle: 40
+  steerAngle: 36.98699
   highspeedsteerAngle: 5
   highspeedsteerAngleAtspeed: 120
   antiRollFrontHorizontal: 5000
@@ -19579,7 +19579,7 @@ MonoBehaviour:
   COM: {fileID: 7900154424596635003}
   brakeTorque: 6000
   downForce: 50
-  speed: 0
+  speed: 33.025616
   maxspeed: 220
   engineTorqueCurve:
     serializedVersion: 2
@@ -19619,12 +19619,12 @@ MonoBehaviour:
   maxEngineTorqueAtRPM: 5200
   minEngineRPM: 1000
   maxEngineRPM: 8000
-  engineRPM: 0
-  engineRPMRaw: 0
+  engineRPM: 6248.614
+  engineRPMRaw: 6246.421
   engineInertia: 0.1
   useRevLimiter: 1
   useExhaustFlame: 1
-  engineRunning: 0
+  engineRunning: 1
   useSteeringLimiter: 1
   useCounterSteering: 1
   useSteeringSensitivity: 1
@@ -19637,7 +19637,7 @@ MonoBehaviour:
   fuelTank: 62
   fuelConsumptionRate: 0.1
   useEngineHeat: 1
-  engineHeat: 15
+  engineHeat: 89.98655
   engineCoolingWaterThreshold: 90
   engineHeatRate: 1
   engineCoolRate: 1
@@ -19670,7 +19670,7 @@ MonoBehaviour:
   gearShiftUpRPM: 7500
   gearShiftDownRPM: 5000
   changingGear: 0
-  direction: 1
+  direction: -1
   launched: 0
   audioType: 2
   autoCreateEngineOffSounds: 1
@@ -19696,27 +19696,27 @@ MonoBehaviour:
     throttleInput: 0
     brakeInput: 0
     steerInput: 0
-    clutchInput: 0
+    clutchInput: 0.5
     handbrakeInput: 0
     boostInput: 0
-    gearInput: 0
+    gearInput: -2
     orbitX: 0
     orbitY: 0
-    scroll: {x: 0, y: 0}
+    scroll: {x: -0, y: -0}
   throttleInput: 0
   brakeInput: 0
   steerInput: 0
   counterSteerInput: 0
-  clutchInput: 0
+  clutchInput: 0.030262167
   handbrakeInput: 0
   boostInput: 0
-  fuelInput: 0
+  fuelInput: 1
   cutGas: 0
   permanentGas: 0
   lowBeamHeadLightsOn: 0
   highBeamHeadLightsOn: 0
   indicatorsOn: 0
-  indicatorTimer: 0
+  indicatorTimer: 244.05066
   damage:
     automaticInstallation: 1
     meshDeformation: 1
@@ -19762,9 +19762,9 @@ MonoBehaviour:
   maximumContactSparkle: 5
   velocityDirection: {fileID: 0}
   steeringDirection: {fileID: 0}
-  velocityAngle: 0
+  velocityAngle: 0.0000045205566
   ABS: 1
-  TCS: 1
+  TCS: 0
   ESP: 0
   steeringHelper: 1
   tractionHelper: 1
@@ -19785,7 +19785,7 @@ MonoBehaviour:
   rearSlip: 0
   underSteering: 0
   overSteering: 0
-  turboBoost: 0
+  turboBoost: 2.569484
   NoS: 100
   useNOS: 0
   useTurbo: 1
@@ -20283,8 +20283,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4997789956353844925}
-  m_LocalRotation: {x: 0.39369547, y: -0.2356615, z: 0.105158664, w: 0.88227504}
-  m_LocalPosition: {x: 30.944855, y: 33.08853, z: -14.760972}
+  m_LocalRotation: {x: 0.39369553, y: -0.2356612, z: 0.10515853, w: 0.8822751}
+  m_LocalPosition: {x: 30.944855, y: 33.08853, z: -14.760974}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
