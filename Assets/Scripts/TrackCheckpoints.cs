@@ -23,6 +23,7 @@ public class TrackCheckpoints : MonoBehaviour
             checkpointList.Add(checkpointSingle);
         }
 
+        lastCheckpointPos = checkpointList[0].transform;
         nextCheckpointIndex = 0;
         currentLap = 1;
     }

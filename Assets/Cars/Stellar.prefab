@@ -14595,8 +14595,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4560715726290760805}
-  m_LocalRotation: {x: 0.39369524, y: -0.23566146, z: 0.10515857, w: 0.8822752}
-  m_LocalPosition: {x: -3.3168793, y: 31.07802, z: 150.47064}
+  m_LocalRotation: {x: 0.39369547, y: -0.23566148, z: 0.10515865, w: 0.88227504}
+  m_LocalPosition: {x: -3.3168716, y: 31.07802, z: 150.47064}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19769,8 +19769,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5743186471608194892}
-  m_LocalRotation: {x: 0.39369524, y: -0.23566146, z: 0.10515857, w: 0.8822752}
-  m_LocalPosition: {x: -3.3168793, y: 31.07802, z: 150.47064}
+  m_LocalRotation: {x: 0.39369547, y: -0.23566148, z: 0.10515865, w: 0.88227504}
+  m_LocalPosition: {x: -3.3168716, y: 31.07802, z: 150.47064}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20147,7 +20147,7 @@ GameObject:
   - component: {fileID: 527646800779808681}
   m_Layer: 8
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
