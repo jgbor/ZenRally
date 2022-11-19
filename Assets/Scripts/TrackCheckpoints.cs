@@ -23,6 +23,7 @@ public class TrackCheckpoints : MonoBehaviour
             checkpointList.Add(checkpointSingle);
         }
 
+        lastCheckpointPos = checkpointList[0].transform;
         nextCheckpointIndex = 0;
         currentLap = 1;
     }
@@ -35,7 +36,7 @@ public class TrackCheckpoints : MonoBehaviour
             {
                 nextCheckpointIndex = (nextCheckpointIndex + 1) % checkpointList.Count;               
                 lastCheckpointPos=checkpointSingle.transform;
-                lastCheckpointPos.position = car.ClosestPoint(lastCheckpointPos.position);
+                lastCheckpointPos.position = new Vector3(lastCheckpointPos.position.x, car.ClosestPoint(lastCheckpointPos.position).y, lastCheckpointPos.position.z);
                 if (nextCheckpointIndex == 0)
                 {
                     Debug.Log($"Lap {currentLap} finished");

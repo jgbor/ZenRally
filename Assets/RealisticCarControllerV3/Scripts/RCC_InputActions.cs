@@ -233,6 +233,15 @@ public partial class @RCC_InputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": ""Press"",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Respawn"",
+                    ""type"": ""Button"",
+                    ""id"": ""beb1367b-5e2d-49fb-8ef7-61fdc8408631"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -1247,6 +1256,17 @@ public partial class @RCC_InputActions : IInputActionCollection2, IDisposable
                     ""action"": ""Clutch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""09e9fa5e-45fc-408c-b8f9-1ed220ae001d"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard Mouse"",
+                    ""action"": ""Respawn"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -1505,28 +1525,6 @@ public partial class @RCC_InputActions : IInputActionCollection2, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""7e7f1b75-4234-4221-9430-5009b0189f41"",
-                    ""path"": ""<Keyboard>/r"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard Mouse"",
-                    ""action"": ""Record"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""470d0d53-dcb2-4cb0-a5a0-add83c1f0eec"",
-                    ""path"": ""<Keyboard>/p"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard Mouse"",
-                    ""action"": ""Replay"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""7babc1f5-e42a-4a07-b608-403cd4d3e66e"",
                     ""path"": ""<Keyboard>/g"",
                     ""interactions"": """",
@@ -1593,6 +1591,7 @@ public partial class @RCC_InputActions : IInputActionCollection2, IDisposable
         m_Vehicle__6thGear = m_Vehicle.FindAction("6thGear", throwIfNotFound: true);
         m_Vehicle_RGear = m_Vehicle.FindAction("RGear", throwIfNotFound: true);
         m_Vehicle_Clutch = m_Vehicle.FindAction("Clutch", throwIfNotFound: true);
+        m_Vehicle_Respawn = m_Vehicle.FindAction("Respawn", throwIfNotFound: true);
         // Camera
         m_Camera = asset.FindActionMap("Camera", throwIfNotFound: true);
         m_Camera_Orbit = m_Camera.FindAction("Orbit", throwIfNotFound: true);
@@ -1686,6 +1685,7 @@ public partial class @RCC_InputActions : IInputActionCollection2, IDisposable
     private readonly InputAction m_Vehicle__6thGear;
     private readonly InputAction m_Vehicle_RGear;
     private readonly InputAction m_Vehicle_Clutch;
+    private readonly InputAction m_Vehicle_Respawn;
     public struct VehicleActions
     {
         private @RCC_InputActions m_Wrapper;
@@ -1713,6 +1713,7 @@ public partial class @RCC_InputActions : IInputActionCollection2, IDisposable
         public InputAction @_6thGear => m_Wrapper.m_Vehicle__6thGear;
         public InputAction @RGear => m_Wrapper.m_Vehicle_RGear;
         public InputAction @Clutch => m_Wrapper.m_Vehicle_Clutch;
+        public InputAction @Respawn => m_Wrapper.m_Vehicle_Respawn;
         public InputActionMap Get() { return m_Wrapper.m_Vehicle; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1791,6 +1792,9 @@ public partial class @RCC_InputActions : IInputActionCollection2, IDisposable
                 @Clutch.started -= m_Wrapper.m_VehicleActionsCallbackInterface.OnClutch;
                 @Clutch.performed -= m_Wrapper.m_VehicleActionsCallbackInterface.OnClutch;
                 @Clutch.canceled -= m_Wrapper.m_VehicleActionsCallbackInterface.OnClutch;
+                @Respawn.started -= m_Wrapper.m_VehicleActionsCallbackInterface.OnRespawn;
+                @Respawn.performed -= m_Wrapper.m_VehicleActionsCallbackInterface.OnRespawn;
+                @Respawn.canceled -= m_Wrapper.m_VehicleActionsCallbackInterface.OnRespawn;
             }
             m_Wrapper.m_VehicleActionsCallbackInterface = instance;
             if (instance != null)
@@ -1864,6 +1868,9 @@ public partial class @RCC_InputActions : IInputActionCollection2, IDisposable
                 @Clutch.started += instance.OnClutch;
                 @Clutch.performed += instance.OnClutch;
                 @Clutch.canceled += instance.OnClutch;
+                @Respawn.started += instance.OnRespawn;
+                @Respawn.performed += instance.OnRespawn;
+                @Respawn.canceled += instance.OnRespawn;
             }
         }
     }
@@ -2035,6 +2042,7 @@ public partial class @RCC_InputActions : IInputActionCollection2, IDisposable
         void On_6thGear(InputAction.CallbackContext context);
         void OnRGear(InputAction.CallbackContext context);
         void OnClutch(InputAction.CallbackContext context);
+        void OnRespawn(InputAction.CallbackContext context);
     }
     public interface ICameraActions
     {
