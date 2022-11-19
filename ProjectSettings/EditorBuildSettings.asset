@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mountain_Track.unity
     guid: 33d76700760682347a21e99082a7b0fa
+  - enabled: 1
+    path: Assets/Scenes/Summer_4_day.unity
+    guid: 70d9070ceb5f0f84e97b8541a29e8ffb
   m_configObjects: {}
