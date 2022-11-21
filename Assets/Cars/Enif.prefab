@@ -19770,8 +19770,8 @@ MonoBehaviour:
   gauges: {fileID: 0}
   customizationMenu: {fileID: 0}
   RPMLabel: {fileID: 0}
-  KMHLabel: {fileID: 0}
-  GearLabel: {fileID: 0}
+  KMHLabel: {fileID: 2012997895410051194}
+  GearLabel: {fileID: 4203549872074520132}
   recordingLabel: {fileID: 0}
   ABS: {fileID: 0}
   ESP: {fileID: 0}
@@ -19781,7 +19781,7 @@ MonoBehaviour:
   rightIndicator: {fileID: 0}
   heatIndicator: {fileID: 0}
   fuelIndicator: {fileID: 0}
-  rpmIndicator: {fileID: 0}
+  rpmIndicator: {fileID: 5442560261265470080}
   mobileControllers: {fileID: 0}
 --- !u!1 &2663725919528264184
 GameObject:
@@ -20842,3 +20842,36 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6196442384872163434, guid: 967bc8ad0ff51ac4a8db0450d22488cd, type: 3}
   m_PrefabInstance: {fileID: 4949679886987768479}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2012997895410051194 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6872300936242092773, guid: 967bc8ad0ff51ac4a8db0450d22488cd, type: 3}
+  m_PrefabInstance: {fileID: 4949679886987768479}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4203549872074520132 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9144218159059748059, guid: 967bc8ad0ff51ac4a8db0450d22488cd, type: 3}
+  m_PrefabInstance: {fileID: 4949679886987768479}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5442560261265470080 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1096362734765703199, guid: 967bc8ad0ff51ac4a8db0450d22488cd, type: 3}
+  m_PrefabInstance: {fileID: 4949679886987768479}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
