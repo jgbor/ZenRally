@@ -9,13 +9,6 @@ public class CarSpawn : MonoBehaviour
     public GameObject car2;
     public GameObject car3;
     public GameObject car4;
-    public Transform transform;
-
-    private GameObject countDown;
-    public AudioSource threeSound;
-    public AudioSource twoSound;
-    public AudioSource oneSound;
-    public AudioSource goSound;
 
     // Start is called before the first frame update
     void Start()
@@ -52,31 +45,31 @@ public class CarSpawn : MonoBehaviour
     {
         car.GetComponent<RCC_CarControllerV3>().enabled = false;
         
-        countDown = GameObject.FindGameObjectWithTag("CntDown");
+        GameObject countDown = GameObject.FindGameObjectWithTag("CntDown");
+
         countDown.GetComponent<Text>().text = "";
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
+        countDown.SetActive(false);
         countDown.GetComponent<Text>().text = "3";
-        //threeSound.Play();
+        AudioSource audio = car.GetComponentInChildren<Canvas>().GetComponentInChildren<AudioSource>();
+        audio.Play();
         countDown.SetActive(true);
 
         yield return new WaitForSeconds(1f);
         countDown.SetActive(false);
         countDown.GetComponent<Text>().text = "2";
-        //twoSound.Play();
         countDown.SetActive(true);
 
         yield return new WaitForSeconds(1f);
         countDown.SetActive(false);
         countDown.GetComponent<Text>().text = "1";
-        //oneSound.Play();
         countDown.SetActive(true);
 
         yield return new WaitForSeconds(1f);
         countDown.SetActive(false);
         car.GetComponent<RCC_CarControllerV3>().enabled = true;
         countDown.GetComponent<Text>().text = "GO!";
-        //goSound.Play();
         countDown.SetActive(true);
     }
 }

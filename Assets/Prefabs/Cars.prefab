@@ -52,11 +52,7 @@ MonoBehaviour:
   car2: {fileID: 25113900600414261}
   car3: {fileID: 6192760327111339590}
   car4: {fileID: 4960730313142508345}
-  transform: {fileID: 2359550314926630370}
-  threeSound: {fileID: 0}
-  twoSound: {fileID: 0}
-  oneSound: {fileID: 0}
-  goSound: {fileID: 0}
+  sound: {fileID: 8300000, guid: e4d1457325fa42d4cb16f73fd2f6bdc9, type: 3}
 --- !u!1001 &2359550315050974687
 PrefabInstance:
   m_ObjectHideFlags: 0
