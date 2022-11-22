@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TrackCheckpoints : MonoBehaviour
 {
     private List<CheckpointSingle> checkpointList;
     public Transform lastCheckpointPos;
     private int nextCheckpointIndex;
-    private int currentLap;
+
     public int lapToComplete;
+    private int currentLap;
 
     private void Awake()
     { 
@@ -39,7 +41,6 @@ public class TrackCheckpoints : MonoBehaviour
                 lastCheckpointPos.position = new Vector3(lastCheckpointPos.position.x, car.ClosestPoint(lastCheckpointPos.position).y, lastCheckpointPos.position.z);
                 if (nextCheckpointIndex == 0)
                 {
-                    Debug.Log($"Lap {currentLap} finished");
                     currentLap++;
                     if(currentLap > lapToComplete)
                     {
@@ -52,5 +53,6 @@ public class TrackCheckpoints : MonoBehaviour
                 Debug.Log("wrong checkpoint");
             }
         }
+        GameObject.FindGameObjectWithTag("LapCNT").GetComponent<Text>().text = $"{currentLap} / {lapToComplete}";
     }
 }
