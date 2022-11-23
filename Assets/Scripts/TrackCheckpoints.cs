@@ -48,7 +48,7 @@ public class TrackCheckpoints : MonoBehaviour
                     }
                 }
             }
-            else
+            else if(checkpointList.IndexOf(checkpointSingle) != nextCheckpointIndex-1)
             {
                 Debug.Log("wrong checkpoint");
             }

@@ -43,7 +43,7 @@ public class CarSpawn : MonoBehaviour
 
     IEnumerator CountDownRoutine(GameObject car)
     {
-        car.GetComponent<RCC_CarControllerV3>().enabled = false;
+        car.GetComponent<RCC_CarControllerV3>().SetCanControl(false);
         
         GameObject countDown = GameObject.FindGameObjectWithTag("CntDown");
 
@@ -68,7 +68,7 @@ public class CarSpawn : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
         countDown.SetActive(false);
-        car.GetComponent<RCC_CarControllerV3>().enabled = true;
+        car.GetComponent<RCC_CarControllerV3>().SetCanControl(true);
         countDown.GetComponent<Text>().text = "GO!";
         countDown.SetActive(true);
     }

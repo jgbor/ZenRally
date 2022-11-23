@@ -38967,7 +38967,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4278990771004382355}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -20116,7 +20116,7 @@ MonoBehaviour:
   engineRPM: 0
   engineRPMRaw: 0
   engineInertia: 0.2
-  useRevLimiter: 0
+  useRevLimiter: 1
   useExhaustFlame: 0
   engineRunning: 0
   useSteeringLimiter: 1
