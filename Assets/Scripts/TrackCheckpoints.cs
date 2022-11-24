@@ -50,7 +50,7 @@ public class TrackCheckpoints : MonoBehaviour
             }
             else if(checkpointList.IndexOf(checkpointSingle) != nextCheckpointIndex-1)
             {
-                Debug.Log("wrong checkpoint");
+                GameObject.FindGameObjectWithTag("Player").GetComponent<RCC_CarControllerV3>().ResetToCheckPoint();
             }
         }
         GameObject.FindGameObjectWithTag("LapCNT").GetComponent<Text>().text = $"{currentLap} / {lapToComplete}";

@@ -986,7 +986,7 @@ public class RCC_CarControllerV3 : RCC_Core {
 
     }
 
-    private void ResetToCheckPoint()
+    public void ResetToCheckPoint()
     {
         transform.position = GameObject.FindGameObjectWithTag("Track").GetComponent<TrackCheckpoints>().lastCheckpointPos.position;
         transform.rotation = GameObject.FindGameObjectWithTag("Track").GetComponent<TrackCheckpoints>().lastCheckpointPos.rotation;
