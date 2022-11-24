@@ -53,6 +53,7 @@ MonoBehaviour:
   car2: {fileID: 25113900600414261}
   car3: {fileID: 6192760327111339590}
   car4: {fileID: 4960730313142508345}
+  car5: {fileID: 2226808824841328586}
 --- !u!1001 &2359550315050974687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -637,5 +638,10 @@ PrefabInstance:
 --- !u!4 &1561876605569011056 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8278750626820781739, guid: 449beddee6a144e46b5b346139c83017, type: 3}
+  m_PrefabInstance: {fileID: 7442446506476370907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2226808824841328586 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8768463916570356753, guid: 449beddee6a144e46b5b346139c83017, type: 3}
   m_PrefabInstance: {fileID: 7442446506476370907}
   m_PrefabAsset: {fileID: 0}
