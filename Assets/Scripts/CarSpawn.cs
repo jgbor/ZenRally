@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CarSpawn : MonoBehaviour
 {
@@ -8,7 +9,6 @@ public class CarSpawn : MonoBehaviour
     public GameObject car2;
     public GameObject car3;
     public GameObject car4;
-    public Transform transform;
 
     // Start is called before the first frame update
     void Start()
@@ -37,5 +37,39 @@ public class CarSpawn : MonoBehaviour
             car.transform.position = transform.position;
             car.transform.rotation = transform.rotation;
         }
+
+        StartCoroutine(CountDownRoutine(car));
+    }
+
+    IEnumerator CountDownRoutine(GameObject car)
+    {
+        car.GetComponent<RCC_CarControllerV3>().NGear= true;
+        
+        GameObject countDown = GameObject.FindGameObjectWithTag("CntDown");
+
+        countDown.GetComponent<Text>().text = "";
+
+        yield return new WaitForSeconds(1f);
+        countDown.SetActive(false);
+        countDown.GetComponent<Text>().text = "3";
+        AudioSource audio = car.GetComponentInChildren<Canvas>().GetComponentInChildren<AudioSource>();
+        audio.Play();
+        countDown.SetActive(true);
+
+        yield return new WaitForSeconds(1f);
+        countDown.SetActive(false);
+        countDown.GetComponent<Text>().text = "2";
+        countDown.SetActive(true);
+
+        yield return new WaitForSeconds(1f);
+        countDown.SetActive(false);
+        countDown.GetComponent<Text>().text = "1";
+        countDown.SetActive(true);
+
+        yield return new WaitForSeconds(1f);
+        countDown.SetActive(false);
+        car.GetComponent<RCC_CarControllerV3>().NGear = false;
+        countDown.GetComponent<Text>().text = "GO!";
+        countDown.SetActive(true);
     }
 }

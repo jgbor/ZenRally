@@ -5,11 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Track
+  - CntDown
+  - LapCNT
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - CollideCamera
   - Water
   - UI
   - 
