@@ -77,6 +77,6 @@ public class CarSpawn : MonoBehaviour
         countDown.GetComponent<Text>().text = "GO!";
         countDown.SetActive(true);
 
-        GameObject.Find("Timer").GetComponent<TimingScript>().countTime = true;
+        GameObject.Find("Timer").GetComponent<TimingScript>().StartCounting();
     }
 }

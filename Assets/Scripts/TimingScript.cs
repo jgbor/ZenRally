@@ -30,20 +30,8 @@ public class TimingScript : MonoBehaviour
     private void Start()
     {
         countTime = false;
-        totalMin = 0;
-        totalSec = 0;
-        totalMillisec = 0;
-        minText=GameObject.Find("Minutes");
-        secText=GameObject.Find("Seconds");
-        milliText = GameObject.Find("Millisecs");
-        bestMinText = GameObject.Find("BestMinutes");
-        bestSecText = GameObject.Find("BestSeconds");
-        bestMilliText = GameObject.Find("BestMillisecs");
-        bestMin =1000;
-        bestSec=1000;
-        bestMillisec=1000;
     }
-
+    
     void Update()
     {
         if (countTime)
@@ -100,5 +88,22 @@ public class TimingScript : MonoBehaviour
         lapMin = 0;
         lapSec = 0;
         lapMillisec = 0;
+    }
+
+    public void StartCounting()
+    {
+        countTime = true;
+        totalMin = 0;
+        totalSec = 0;
+        totalMillisec = 0;
+        minText = GameObject.Find("Minutes");
+        secText = GameObject.Find("Seconds");
+        milliText = GameObject.Find("Millisecs");
+        bestMinText = GameObject.Find("BestMinutes");
+        bestSecText = GameObject.Find("BestSeconds");
+        bestMilliText = GameObject.Find("BestMillisecs");
+        bestMin = 1000;
+        bestSec = 1000;
+        bestMillisec = 1000;
     }
 }
