@@ -44,17 +44,19 @@ public class PauseScript : MonoBehaviour
         AudioListener.pause = true;
     }
 
+    public void Restart()
+    {
+        GameIsPaused = false;
+        Time.timeScale = 1;
+        AudioListener.pause = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     public void Menu()
     {
         GameIsPaused = false;
         Time.timeScale = 1;
         AudioListener.pause = false;
         SceneManager.LoadScene(0);
-    }
-
-    public void Quit()
-    {
-        Debug.Log("Quit");
-        Application.Quit();
     }
 }
