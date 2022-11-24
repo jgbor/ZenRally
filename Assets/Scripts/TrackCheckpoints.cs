@@ -41,10 +41,11 @@ public class TrackCheckpoints : MonoBehaviour
                 lastCheckpointPos.position = new Vector3(lastCheckpointPos.position.x, car.ClosestPoint(lastCheckpointPos.position).y, lastCheckpointPos.position.z);
                 if (nextCheckpointIndex == 0)
                 {
+                    GameObject.Find("Timer").GetComponent<TimingScript>().EndLap();
                     currentLap++;
                     if(currentLap > lapToComplete)
                     {
-                        //VÉGE
+                        GameObject.Find("Timer").GetComponent<TimingScript>().countTime = false;
                     }
                 }
             }

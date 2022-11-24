@@ -76,5 +76,7 @@ public class CarSpawn : MonoBehaviour
         car.GetComponent<RCC_CarControllerV3>().NGear = false;
         countDown.GetComponent<Text>().text = "GO!";
         countDown.SetActive(true);
+
+        GameObject.Find("Timer").GetComponent<TimingScript>().countTime = true;
     }
 }
