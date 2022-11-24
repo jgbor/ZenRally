@@ -49,10 +49,11 @@ public class TimingScript : MonoBehaviour
         if (countTime)
         {
             totalMillisec += Time.deltaTime * 1000;
+            lapMillisec += Time.deltaTime * 1000;
             if (totalMillisec >= 1000)
             {
-                totalMillisec = 0.0f;
-                lapMillisec= 0.0f;
+                totalMillisec = 0;
+                lapMillisec = 0;
                 totalSec++;
                 lapSec++;
             }
@@ -73,14 +74,7 @@ public class TimingScript : MonoBehaviour
             {
                 secText.GetComponent<Text>().text = $"{totalSec}.";
             }
-            if (totalMin < 10)
-            {
-                minText.GetComponent<Text>().text = $" {totalMin}:";
-            }
-            else
-            {
-                minText.GetComponent<Text>().text = $"{totalMin}:";
-            }
+            minText.GetComponent<Text>().text = $"{totalMin}:";          
         }
     }
 
@@ -92,8 +86,16 @@ public class TimingScript : MonoBehaviour
             bestSec = lapSec;
             bestMillisec = lapMillisec;
             bestMilliText.GetComponent<Text>().text = bestMillisec.ToString("F0");
-            bestSecText.GetComponent<Text>().text = bestSec.ToString();
-            bestMinText.GetComponent<Text>().text = bestMin.ToString();
+            if (bestSec < 10)
+            {
+                bestSecText.GetComponent<Text>().text = $"0{bestSec}.";
+            }
+            else
+            {
+                bestSecText.GetComponent<Text>().text = $"{bestSec}.";
+            }
+            bestMinText.GetComponent<Text>().text = $"{bestMin}:";
+           
         }
         lapMin = 0;
         lapSec = 0;
