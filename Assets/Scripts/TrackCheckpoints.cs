@@ -45,7 +45,7 @@ public class TrackCheckpoints : MonoBehaviour
                     currentLap++;
                     if(currentLap > lapToComplete)
                     {
-                        GameObject.Find("Timer").GetComponent<TimingScript>().countTime = false;
+                        GameObject.FindGameObjectWithTag("Finish").GetComponent<FinishScript>().FinishGame();                      
                     }
                 }
             }
