@@ -9,6 +9,7 @@ public class CarSpawn : MonoBehaviour
     public GameObject car2;
     public GameObject car3;
     public GameObject car4;
+    public GameObject car5;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,10 @@ public class CarSpawn : MonoBehaviour
         if(MainMenuScript.CarNumber == 4)
         {
             car = Instantiate(car4) as GameObject;
+        }
+        if(MainMenuScript.CarNumber == 5)
+        {
+            car = Instantiate(car5) as GameObject;
         }
 
         if(car != null)
@@ -71,5 +76,7 @@ public class CarSpawn : MonoBehaviour
         car.GetComponent<RCC_CarControllerV3>().NGear = false;
         countDown.GetComponent<Text>().text = "GO!";
         countDown.SetActive(true);
+
+        GameObject.Find("Timer").GetComponent<TimingScript>().StartCounting();
     }
 }

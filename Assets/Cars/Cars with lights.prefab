@@ -15,9 +15,13 @@ PrefabInstance:
       propertyPath: lowBeamHeadLightsOn
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2088949722571936611, guid: 00464b531af72ff439d3acdf24ca9de1, type: 3}
+      propertyPath: lowBeamHeadLightsOn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2359550314926630365, guid: 00464b531af72ff439d3acdf24ca9de1, type: 3}
       propertyPath: m_Name
-      value: Cars
+      value: Cars with lights
       objectReference: {fileID: 0}
     - target: {fileID: 2359550314926630370, guid: 00464b531af72ff439d3acdf24ca9de1, type: 3}
       propertyPath: m_RootOrder

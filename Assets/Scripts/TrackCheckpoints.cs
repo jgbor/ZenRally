@@ -41,16 +41,17 @@ public class TrackCheckpoints : MonoBehaviour
                 lastCheckpointPos.position = new Vector3(lastCheckpointPos.position.x, car.ClosestPoint(lastCheckpointPos.position).y, lastCheckpointPos.position.z);
                 if (nextCheckpointIndex == 0)
                 {
+                    GameObject.Find("Timer").GetComponent<TimingScript>().EndLap();
                     currentLap++;
                     if(currentLap > lapToComplete)
                     {
-                        //VÉGE
+                        GameObject.FindGameObjectWithTag("Finish").GetComponent<FinishScript>().FinishGame();
                     }
                 }
             }
             else if(checkpointList.IndexOf(checkpointSingle) != nextCheckpointIndex-1)
             {
-                Debug.Log("wrong checkpoint");
+                GameObject.FindGameObjectWithTag("Player").GetComponentInParent<RCC_CarControllerV3>().ResetToCheckPoint();
             }
         }
         GameObject.FindGameObjectWithTag("LapCNT").GetComponent<Text>().text = $"{currentLap} / {lapToComplete}";
