@@ -45,13 +45,13 @@ public class TrackCheckpoints : MonoBehaviour
                     currentLap++;
                     if(currentLap > lapToComplete)
                     {
-                        GameObject.FindGameObjectWithTag("Finish").GetComponent<FinishScript>().FinishGame();                      
+                        GameObject.FindGameObjectWithTag("Finish").GetComponent<FinishScript>().FinishGame();
                     }
                 }
             }
             else if(checkpointList.IndexOf(checkpointSingle) != nextCheckpointIndex-1)
             {
-                GameObject.FindGameObjectWithTag("Player").GetComponent<RCC_CarControllerV3>().ResetToCheckPoint();
+                GameObject.FindGameObjectWithTag("Player").GetComponentInParent<RCC_CarControllerV3>().ResetToCheckPoint();
             }
         }
         GameObject.FindGameObjectWithTag("LapCNT").GetComponent<Text>().text = $"{currentLap} / {lapToComplete}";
