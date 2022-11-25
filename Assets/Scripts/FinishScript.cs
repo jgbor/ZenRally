@@ -8,11 +8,21 @@ public class FinishScript : MonoBehaviour
 {
     public GameObject FinishMenu;
 
+    //for finishing menu debugging
+    /*private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            FinishGame();
+        }
+    }*/
+
     public void FinishGame()
     {
         TimingScript timer = GameObject.Find("Timer").GetComponent<TimingScript>();
         timer.countTime = false;
         FinishMenu.SetActive(true);
+        GameObject.Find("Canvas").GetComponent<Canvas>().enabled = false;
 
         TextMeshProUGUI minText = GameObject.Find("FinishMinutes").GetComponent<TextMeshProUGUI>();
         TextMeshProUGUI secText = GameObject.Find("FinishSeconds").GetComponent<TextMeshProUGUI>();
