@@ -988,10 +988,14 @@ public class RCC_CarControllerV3 : RCC_Core {
 
     public void ResetToCheckPoint()
     {
-        transform.position = GameObject.FindGameObjectWithTag("Track").GetComponent<TrackCheckpoints>().lastCheckpointPos.position;
-        transform.rotation = GameObject.FindGameObjectWithTag("Track").GetComponent<TrackCheckpoints>().lastCheckpointPos.rotation;
-        GetComponent<Rigidbody>().velocity = Vector3.zero;
-        GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+        if (canControl && !NGear)
+        {
+            GetComponent<Rigidbody>().velocity = Vector3.zero;
+            GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+            transform.position = GameObject.FindGameObjectWithTag("Track").GetComponent<TrackCheckpoints>().lastCheckpointPos.position;
+            transform.rotation = GameObject.FindGameObjectWithTag("Track").GetComponent<TrackCheckpoints>().lastCheckpointPos.rotation;
+            GameObject.Find("Timer").GetComponent<TimingScript>().PenaltyTime();
+        }
     }
 
     private void SteeringAssistance() {

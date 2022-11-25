@@ -13,17 +13,18 @@ public class TimingScript : MonoBehaviour
     private int lapSec;
     private float lapMillisec;
 
-    private int bestMin;
-    private int bestSec;
-    private float bestMillisec;
-
     private GameObject minText;
     private GameObject secText;
     private GameObject milliText;
 
-    private GameObject bestMinText;
+    //if ou want bestLap counter uncomment this section
+    /*private int bestMin;
+    private int bestSec;
+    private float bestMillisec;*/
+
+    /*private GameObject bestMinText;
     private GameObject bestSecText;
-    private GameObject bestMilliText;
+    private GameObject bestMilliText;*/
 
     public bool countTime;
 
@@ -76,7 +77,8 @@ public class TimingScript : MonoBehaviour
 
     public void EndLap()
     {
-        if ((lapMin * 60 + lapSec) * 1000 + lapMillisec < (bestMin * 60 + bestSec) * 1000 + bestMillisec)
+        //if ou want bestLap counter uncomment this section
+        /*if ((lapMin * 60 + lapSec) * 1000 + lapMillisec < (bestMin * 60 + bestSec) * 1000 + bestMillisec)
         {
             bestMin = lapMin;
             bestSec = lapSec;
@@ -103,7 +105,7 @@ public class TimingScript : MonoBehaviour
             }
             bestMinText.GetComponent<Text>().text = $"{bestMin}:";
            
-        }
+        }*/
         lapMin = 0;
         lapSec = 0;
         lapMillisec = 0;
@@ -118,11 +120,21 @@ public class TimingScript : MonoBehaviour
         minText = GameObject.Find("Minutes");
         secText = GameObject.Find("Seconds");
         milliText = GameObject.Find("Millisecs");
-        bestMinText = GameObject.Find("BestMinutes");
+
+        //if ou want bestLap counter uncomment this section
+        /*bestMinText = GameObject.Find("BestMinutes");
         bestSecText = GameObject.Find("BestSeconds");
         bestMilliText = GameObject.Find("BestMillisecs");
         bestMin = 1000;
         bestSec = 1000;
-        bestMillisec = 1000;
+        bestMillisec = 1000;*/
+    }
+
+    public void PenaltyTime()
+    {
+        lapSec += 5;
+        totalSec += 5;
+        GameObject.Find("PenaltyText").GetComponent<Text>().text = "+5 sec";
+        GameObject.Find("PenaltyText").GetComponent<Animator>().Play("penaltyanimation",0,0.0f);
     }
 }
