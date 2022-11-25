@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class TimingScript : MonoBehaviour
 {
-    private int totalMin;
-    private int totalSec;
-    private float totalMillisec;
+    public int totalMin;
+    public int totalSec;
+    public float totalMillisec;
 
     private int lapMin;
     private int lapSec;
@@ -52,8 +52,16 @@ public class TimingScript : MonoBehaviour
                 totalMin++;
                 lapMin++;
             }
-
-            milliText.GetComponent<Text>().text = totalMillisec.ToString("F0");
+            if (totalMillisec < 10) { 
+                milliText.GetComponent<Text>().text= "00" + totalMillisec.ToString("F0");
+            }
+            else if (totalMillisec < 100) {
+                milliText.GetComponent<Text>().text = "0" + totalMillisec.ToString("F0");
+            }
+            else
+            {
+                milliText.GetComponent<Text>().text = totalMillisec.ToString("F0");
+            }
             if (totalSec < 10)
             {
                 secText.GetComponent<Text>().text = $"0{totalSec}.";
@@ -73,7 +81,18 @@ public class TimingScript : MonoBehaviour
             bestMin = lapMin;
             bestSec = lapSec;
             bestMillisec = lapMillisec;
-            bestMilliText.GetComponent<Text>().text = bestMillisec.ToString("F0");
+            if (bestMillisec < 10)
+            {
+                bestMilliText.GetComponent<Text>().text = "00" + bestMillisec.ToString("F0");
+            }
+            else if (bestMillisec < 100)
+            {
+                bestMilliText.GetComponent<Text>().text = "0" + bestMillisec.ToString("F0");
+            }
+            else
+            {
+                bestMilliText.GetComponent<Text>().text = bestMillisec.ToString("F0");
+            }
             if (bestSec < 10)
             {
                 bestSecText.GetComponent<Text>().text = $"0{bestSec}.";
