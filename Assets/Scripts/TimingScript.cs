@@ -38,20 +38,29 @@ public class TimingScript : MonoBehaviour
         {
             totalMillisec += Time.deltaTime * 1000;
             lapMillisec += Time.deltaTime * 1000;
+
             if (totalMillisec >= 1000)
             {
                 totalMillisec = 0;
-                lapMillisec = 0;
                 totalSec++;
+            }
+            if(lapMillisec>= 1000)
+            {
+                lapMillisec = 0;
                 lapSec++;
             }
+
             if (totalSec >= 60)
             {
                 totalSec = 0;
-                lapSec= 0;
                 totalMin++;
+            }
+            if(lapSec>= 60)
+            {
+                lapSec = 0;
                 lapMin++;
             }
+
             if (totalMillisec < 10) { 
                 milliText.GetComponent<Text>().text= "00" + totalMillisec.ToString("F0");
             }
