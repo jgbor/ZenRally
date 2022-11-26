@@ -17,14 +17,13 @@ public class TimingScript : MonoBehaviour
     private GameObject secText;
     private GameObject milliText;
 
-    //if ou want bestLap counter uncomment this section
-    /*private int bestMin;
-    private int bestSec;
-    private float bestMillisec;*/
+    private int sectorMin;
+    private int sectorSec;
+    private float sectorMillisec;
 
-    /*private GameObject bestMinText;
-    private GameObject bestSecText;
-    private GameObject bestMilliText;*/
+    private GameObject sectorMinText;
+    private GameObject sectorSecText;
+    private GameObject sectorMilliText;
 
     public bool countTime;
 
@@ -77,38 +76,37 @@ public class TimingScript : MonoBehaviour
 
     public void EndLap()
     {
-        //if ou want bestLap counter uncomment this section
-        /*if ((lapMin * 60 + lapSec) * 1000 + lapMillisec < (bestMin * 60 + bestSec) * 1000 + bestMillisec)
-        {
-            bestMin = lapMin;
-            bestSec = lapSec;
-            bestMillisec = lapMillisec;
-            if (bestMillisec < 10)
-            {
-                bestMilliText.GetComponent<Text>().text = "00" + bestMillisec.ToString("F0");
-            }
-            else if (bestMillisec < 100)
-            {
-                bestMilliText.GetComponent<Text>().text = "0" + bestMillisec.ToString("F0");
-            }
-            else
-            {
-                bestMilliText.GetComponent<Text>().text = bestMillisec.ToString("F0");
-            }
-            if (bestSec < 10)
-            {
-                bestSecText.GetComponent<Text>().text = $"0{bestSec}.";
-            }
-            else
-            {
-                bestSecText.GetComponent<Text>().text = $"{bestSec}.";
-            }
-            bestMinText.GetComponent<Text>().text = $"{bestMin}:";
-           
-        }*/
         lapMin = 0;
         lapSec = 0;
         lapMillisec = 0;
+    }
+
+    public void EndSector()
+    {      
+        sectorMin = lapMin;
+        sectorSec = lapSec;
+        sectorMillisec = lapMillisec;
+        if (sectorMillisec < 10)
+        {
+            sectorMilliText.GetComponent<Text>().text = "00" + sectorMillisec.ToString("F0");
+        }
+        else if (sectorMillisec < 100)
+        {
+            sectorMilliText.GetComponent<Text>().text = "0" + sectorMillisec.ToString("F0");
+        }
+        else
+        {
+            sectorMilliText.GetComponent<Text>().text = sectorMillisec.ToString("F0");
+        }
+        if (sectorSec < 10)
+        {
+            sectorSecText.GetComponent<Text>().text = $"0{sectorSec}.";
+        }
+        else
+        {
+            sectorSecText.GetComponent<Text>().text = $"{sectorSec}.";
+        }
+        sectorMinText.GetComponent<Text>().text = $"{sectorMin}:";
     }
 
     public void StartCounting()
@@ -121,13 +119,9 @@ public class TimingScript : MonoBehaviour
         secText = GameObject.Find("Seconds");
         milliText = GameObject.Find("Millisecs");
 
-        //if ou want bestLap counter uncomment this section
-        /*bestMinText = GameObject.Find("BestMinutes");
-        bestSecText = GameObject.Find("BestSeconds");
-        bestMilliText = GameObject.Find("BestMillisecs");
-        bestMin = 1000;
-        bestSec = 1000;
-        bestMillisec = 1000;*/
+        sectorMinText = GameObject.Find("SectorMinutes");
+        sectorSecText = GameObject.Find("SectorSeconds");
+        sectorMilliText = GameObject.Find("SectorMillisecs");
     }
 
     public void PenaltyTime()

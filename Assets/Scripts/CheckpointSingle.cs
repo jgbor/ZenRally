@@ -9,6 +9,8 @@ public class CheckpointSingle : MonoBehaviour
 
     private TrackCheckpoints trackCheckpoints;
 
+    public bool endOfSector;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
