@@ -107,6 +107,7 @@ public class TimingScript : MonoBehaviour
             sectorSecText.GetComponent<Text>().text = $"{sectorSec}.";
         }
         sectorMinText.GetComponent<Text>().text = $"{sectorMin}:";
+        sectorMinText.GetComponentInParent<Animator>().Play("sectortimeanimation", 0, 0.0f);
     }
 
     public void StartCounting()

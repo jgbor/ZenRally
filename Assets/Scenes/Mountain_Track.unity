@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1847139988}
-  m_IndirectSpecularColor: {r: 0.14566043, g: 0.19450974, b: 0.2891264, a: 1}
+  m_IndirectSpecularColor: {r: 0.14566052, g: 0.19450994, b: 0.2891264, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -732,6 +732,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 879084838}
     m_Modifications:
+    - target: {fileID: 595956168888364702, guid: 00c610ed899dae84784eeec8d7c395a2, type: 3}
+      propertyPath: endOfSector
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 595956168888364703, guid: 00c610ed899dae84784eeec8d7c395a2, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -867,6 +871,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 879084838}
     m_Modifications:
+    - target: {fileID: 595956168888364702, guid: 00c610ed899dae84784eeec8d7c395a2, type: 3}
+      propertyPath: endOfSector
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 595956168888364703, guid: 00c610ed899dae84784eeec8d7c395a2, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -1240,6 +1248,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 879084838}
     m_Modifications:
+    - target: {fileID: 595956168888364702, guid: 00c610ed899dae84784eeec8d7c395a2, type: 3}
+      propertyPath: endOfSector
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 595956168888364703, guid: 00c610ed899dae84784eeec8d7c395a2, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -2270,6 +2282,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 879084838}
     m_Modifications:
+    - target: {fileID: 595956168888364702, guid: 00c610ed899dae84784eeec8d7c395a2, type: 3}
+      propertyPath: endOfSector
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 595956168888364703, guid: 00c610ed899dae84784eeec8d7c395a2, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -3252,6 +3268,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 879084838}
     m_Modifications:
+    - target: {fileID: 595956168888364702, guid: 00c610ed899dae84784eeec8d7c395a2, type: 3}
+      propertyPath: endOfSector
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 595956168888364703, guid: 00c610ed899dae84784eeec8d7c395a2, type: 3}
       propertyPath: m_RootOrder
       value: 22
