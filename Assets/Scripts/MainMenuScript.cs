@@ -47,7 +47,7 @@ public class MainMenuScript : MonoBehaviour
         myEventSystem .GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(null);
 
         MaterialNumber--;
-        if(MaterialNumber <= 0)
+        if(MaterialNumber < 0)
         {
             MaterialNumber = mats.Length - 1;
         }
