@@ -11,6 +11,8 @@ public class CarSpawn : MonoBehaviour
     public GameObject car4;
     public GameObject car5;
 
+    public Material[] mats;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,12 +41,23 @@ public class CarSpawn : MonoBehaviour
         if(car != null)
         {
             car.SetActive(true);
+            MeshRenderer[] CarMats = car.GetComponentsInChildren<MeshRenderer>();
+            for(int j = 0; j < CarMats.Length; j++)
+            {
+                Material[] materials = CarMats[j].sharedMaterials;
+                for(int i = 0; i < CarMats[j].sharedMaterials.Length; i++)
+                {
+                    materials[i] = mats[MainMenuScript.MaterialNumber];
+                }
+                CarMats[j].sharedMaterials = materials;
+            }
             car.transform.position = transform.position;
             car.transform.rotation = transform.rotation;
         }
 
         StartCoroutine(CountDownRoutine(car));
     }
+
 
     IEnumerator CountDownRoutine(GameObject car)
     {
