@@ -19,7 +19,7 @@ public class ScoreManager : MonoBehaviour
 
     public IEnumerable<Score> GetHighScores(int i)
     {
-        return sd[i].scores.OrderByDescending(x => x.time);
+        return sd[i].scores.OrderBy(x => x.time);
     }
 
     public void AddScore(Score score, int i)
