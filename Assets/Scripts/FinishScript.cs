@@ -10,6 +10,8 @@ public class FinishScript : MonoBehaviour
 
     public TMP_InputField input;
 
+    public static bool InFinishScreen = false;
+
     //for finishing menu debugging
     /*private void Update()
     {
@@ -21,6 +23,8 @@ public class FinishScript : MonoBehaviour
 
     public void FinishGame()
     {
+        InFinishScreen = true;
+
         TimingScript timer = GameObject.Find("Timer").GetComponent<TimingScript>();
         timer.countTime = false;
         FinishMenu.SetActive(true);
@@ -66,6 +70,7 @@ public class FinishScript : MonoBehaviour
 
     public void Restart()
     {
+        InFinishScreen = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
@@ -111,6 +116,7 @@ public class FinishScript : MonoBehaviour
 
     public void Menu()
     {
+        InFinishScreen = false;
         SceneManager.LoadScene(0);
     }
 }
