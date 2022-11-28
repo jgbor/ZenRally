@@ -7,6 +7,10 @@ using TMPro;
 
 public class MainMenuScript : MonoBehaviour
 {
+    public static int LeaderboardNumber = 0;
+    public ScoreUI sui;
+    public string[] LeaderboardName;
+    public GameObject LeaderboardText;
 
     public static int CarNumber = 0;
     public Transform car1;
@@ -27,6 +31,34 @@ public class MainMenuScript : MonoBehaviour
     public string[] MaterialNames;
 
     public static int MaterialNumber = 0;
+
+    public void incLeaderboardNumber()
+    {
+        GameObject myEventSystem = GameObject.Find("EventSystem");
+        myEventSystem .GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(null);
+
+        LeaderboardNumber++;
+        if(LeaderboardNumber >= 4)
+        {
+            LeaderboardNumber = 0;
+        }
+        LeaderboardText.GetComponent<TextMeshProUGUI>().text = LeaderboardName[LeaderboardNumber];
+        sui.RefreshLeaderboard();
+    }
+
+    public void decLeaderboardNumber()
+    {
+        GameObject myEventSystem = GameObject.Find("EventSystem");
+        myEventSystem .GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(null);
+
+        LeaderboardNumber--;
+        if(LeaderboardNumber < 0)
+        {
+            LeaderboardNumber = 3;
+        }
+        LeaderboardText.GetComponent<TextMeshProUGUI>().text = LeaderboardName[LeaderboardNumber];
+        sui.RefreshLeaderboard();
+    }
 
     public void nextMaterialNumber()
     {
