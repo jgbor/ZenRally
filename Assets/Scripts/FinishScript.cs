@@ -23,6 +23,9 @@ public class FinishScript : MonoBehaviour
 
     public void FinishGame()
     {
+        input.Select();
+        input.ActivateInputField();
+
         InFinishScreen = true;
 
         TimingScript timer = GameObject.Find("Timer").GetComponent<TimingScript>();
