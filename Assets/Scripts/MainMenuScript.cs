@@ -65,6 +65,11 @@ public class MainMenuScript : MonoBehaviour
         sui.RefreshLeaderboard();
     }
 
+    public void resetMaterialNumber()
+    {
+        MaterialNumber = 0;
+    }
+
     public void nextMaterialNumber()
     {
         GameObject myEventSystem = GameObject.Find("EventSystem");
