@@ -54,6 +54,12 @@ MonoBehaviour:
   car3: {fileID: 6192760327111339590}
   car4: {fileID: 4960730313142508345}
   car5: {fileID: 2226808824841328586}
+  mats:
+  - {fileID: 2100000, guid: 0a5fa0e3de53444488e88fe9ce77ebee, type: 2}
+  - {fileID: 2100000, guid: 36e7c998e660c9646bec8182b09f625c, type: 2}
+  - {fileID: 2100000, guid: 8717d257f117dab42b822658c521ead1, type: 2}
+  - {fileID: 2100000, guid: ca867e7691940e545bd953dbdb41dca6, type: 2}
+  - {fileID: 2100000, guid: fe2f9f2ef464e704f9ba11acdca2882a, type: 2}
 --- !u!1001 &2359550315050974687
 PrefabInstance:
   m_ObjectHideFlags: 0
