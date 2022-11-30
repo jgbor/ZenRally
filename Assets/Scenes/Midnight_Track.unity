@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.014556276, g: 0.021289155, b: 0.047832236, a: 1}
+  m_IndirectSpecularColor: {r: 0.0145562915, g: 0.021289185, b: 0.047832295, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000001, guid: 369701bef8bff1c409b794e027c2fe5d, type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 6cea69292394e2549a6da57aed113e53, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: ee20828a47a41ca49bac910ea25c2c78, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -29444,6 +29444,18 @@ PrefabInstance:
     - target: {fileID: 4635392688759936772, guid: b248c240660478f4497bc445f30bbe24, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635392688759936774, guid: b248c240660478f4497bc445f30bbe24, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635392688759936774, guid: b248c240660478f4497bc445f30bbe24, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635392688759936774, guid: b248c240660478f4497bc445f30bbe24, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b248c240660478f4497bc445f30bbe24, type: 3}

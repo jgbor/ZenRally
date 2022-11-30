@@ -32,6 +32,11 @@ public class MainMenuScript : MonoBehaviour
 
     public static int MaterialNumber = 0;
 
+    public void resetLeaderboardNumber()
+    {
+        LeaderboardNumber = 0;
+    }
+
     public void incLeaderboardNumber()
     {
         GameObject myEventSystem = GameObject.Find("EventSystem");
