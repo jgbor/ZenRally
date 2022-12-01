@@ -35,6 +35,8 @@ public class MainMenuScript : MonoBehaviour
     public void resetLeaderboardNumber()
     {
         LeaderboardNumber = 0;
+        LeaderboardText.GetComponent<TextMeshProUGUI>().text = LeaderboardName[LeaderboardNumber];
+        sui.RefreshLeaderboard();
     }
 
     public void incLeaderboardNumber()
@@ -68,6 +70,7 @@ public class MainMenuScript : MonoBehaviour
     public void resetMaterialNumber()
     {
         MaterialNumber = 0;
+        UpdateAllTextures();
     }
 
     public void nextMaterialNumber()
