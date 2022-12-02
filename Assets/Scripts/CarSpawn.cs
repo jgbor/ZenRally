@@ -51,8 +51,7 @@ public class CarSpawn : MonoBehaviour
                 }
                 CarMats[j].sharedMaterials = materials;
             }
-            car.transform.position = transform.position;
-            car.transform.rotation = transform.rotation;
+            car.transform.SetPositionAndRotation(transform.position, transform.rotation);
         }
 
         StartCoroutine(CountDownRoutine(car));
