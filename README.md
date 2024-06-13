@@ -1,2 +1,2 @@
-# Témalabor
-Témalabor autós játék
+# Zen Rally
+Simple Unity racing game with time trials.
